@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 
 var auth = require('./routes/auth');
 var users = require('./routes/users');
+var quotes = require('./routes/quotes')
 
 var app = express();
 
@@ -17,5 +18,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/auth', auth);
 app.use('/users', users);
-
+app.use('/quotes', quotes)
 module.exports = app;

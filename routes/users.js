@@ -1,6 +1,6 @@
 
 var express = require('express');
-var queries = require('../queries')
+var queries = require('../queries/queries')
 
 var router = express.Router();
 

@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
-const queries = require('../queries')
+const queries = require('../queries/queries')
 const authUtils = require('../utils/auth')
 
 router.post('/login', function(req, res, next) {
